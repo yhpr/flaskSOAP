@@ -1,0 +1,38 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #BFBFBF;
+}
+
+.main-nav{
+	height: 80px;
+	background-color: #10403B;
+	color: #BFBFBF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-nav{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.search-container{
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-body input{
+	padding: 0.3rem;
+}
+
+.search-body button{
+	padding: 0.3rem;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Actividad soap</title>
+	<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+	<nav class="main-nav">
+		<p class="logo-nav">Full Country Info</p>
+	</nav>
+	<div class="search-container">
+		<div class="search-body">
+			<form action="{{url_for("index")}}" method="post">
+				<input type="text" name="fname" placeholder="Country Name" id="flag-name">
+				<button type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+	<div class="country-info">
+		<img src="{{flag}}" alt="">
+		{% for f in info %}
+		<li>{{f}}</li>
+		{% endfor %}
+	</div>
+</body>
+
+</html>

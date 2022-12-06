@@ -7,10 +7,10 @@ app = Flask(__name__, static_folder='static')
 url = 'http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL'
 
 client = Client(url)
-f_info = []
 
 @app.route('/', methods=["GET","POST"])
 def index():
+    f_info = []
     # if request.method == "POST":
     flag_name = request.form.get("fname")
     c_iso_name = client.service.CountryISOCode(flag_name)
@@ -21,8 +21,7 @@ def index():
 
     flag = info_country[6]
 
-    return render_template('index.html', info=f_info, flag=flag)
-
+    return render_template("index.html", info=f_info, flag=flag)
 
 if __name__ == "__main__":
     app.run(debug=True)

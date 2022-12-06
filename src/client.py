@@ -1,12 +1,12 @@
 from suds.client import Client
-from ..app import flag_name
 
 
+url = 'http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL'
 
 client = Client(url)
 
-result = client.service.(flag_name)
 
-r = client.service.FullCountryInfo(result)
+# r = client.service.FullCountryInfo("US")
+r = client.service.FullCountryInfoAllCountries()
 
 print(r)

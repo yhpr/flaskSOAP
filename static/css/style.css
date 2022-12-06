@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -19,7 +20,7 @@ body{
 
 .logo-nav{
 	font-size: 2rem;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .search-container{
@@ -36,3 +37,42 @@ body{
 .search-body button{
 	padding: 0.3rem;
 }
+
+.data-container{
+	height: calc(100vh - 160px);
+	display: flex;
+	justify-content: space-around;
+}
+
+.flag-info{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flag-info img{
+	width: 15rem;
+}
+
+.country-info{
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.country-info li{
+	list-style: none;
+}
+
+.title-name li{
+	font-size: 1.2rem;
+	padding: 5px;
+	font-weight: 500;
+}
+
+.info-country li{
+	font-size: 1.2rem;
+	padding: 5px;
+	padding-left: 2rem;
+}
+

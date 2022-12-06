@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Actividad soap</title>
 	<link rel="stylesheet" href="/static/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,12 +24,30 @@
 			</form>
 		</div>
 	</div>
-	<div class="country-info">
-		<img src="{{flag}}" alt="">
-		{% for f in info %}
-		<li>{{f}}</li>
-		{% endfor %}
+	<div class="data-container">
+
+		<div class="country-info">
+			<div class="title-name">
+				<li>ISO Code</li>
+				<li>Name</li>
+				<li>Capital City</li>
+				<li>Phone Code</li>
+				<li>Continent Code</li>
+				<li>Currency ISO Code</li>
+			</div>
+			<div class="info-country">
+				{% for f in info %}
+				<li>{{f}}</li>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="flag-info">
+			<img src="{{flag}}" alt="">
+		</div>
+
 	</div>
 </body>
+
 
 </html>
